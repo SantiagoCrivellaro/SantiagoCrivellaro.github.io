@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -197,3 +198,352 @@ footer {
     color: #b0bec5;
     margin-top: 50px;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Fondo negro suave */
+    color: #f5f5f5;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: #1e1e2f;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00bcd4; /* Color de fondo turquesa */
+    color: #ffffff; /* Color del texto */
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cv:hover {
+    background-color: #0097a7; /* Color más oscuro en hover */
+    transform: translateY(-5px); /* Efecto de levantamiento en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombras más profundas en hover */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: #00bcd4; /* Turquesa */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Sección Héroe */
+.hero {
+    display: flex; /* Usar flexbox para alinear la imagen y el contenido */
+    align-items: center; /* Centrar verticalmente */
+    background-image: url('https://source.unsplash.com/1600x900/?coding,technology'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 20px;
+}
+
+.hero-image {
+    width: auto; /* Ancho por defecto */
+    height: 100%; /* Alto al 100% */
+    max-width: 300px; /* Limitar el ancho máximo si es necesario */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #0097a7; /* Color más oscuro al pasar el mouse */
+}
+
+/* Secciones */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #00bcd4; /* Turquesa */
+}
+
+.about-image {
+    width: 450px; /* Establece un ancho máximo adecuado */
+    height: 400px; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-bottom: 40px; /* Espacio inferior para separar de la sección "Sobre mí" */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 5px solid #00bcd4; /* Añade un borde color turquesa alrededor de la imagen */
+}
+
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #b0bec5;
+}
+
+#technologies {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.tech-main-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio consistente entre las cajas */
+    margin-bottom: 60px; /* Espacio más grande entre las secciones */
+    flex-wrap: wrap; /* Hace que las cajas se ajusten automáticamente en pantallas más pequeñas */
+}
+
+.tech-box, .tools-box {
+    background-color: #2a2a3b; /* Fondo más claro para contraste */
+    padding: 40px;
+    border-radius: 15px; /* Bordes más suaves */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombras más profundas y suaves */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al hacer hover */
+    width: 45%;
+    max-width: 550px; /* Limita el tamaño máximo */
+    margin: 0 auto; /* Centra en pantallas más pequeñas */
+}
+
+.tech-box:hover, .tools-box:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento en hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombras más prominentes en hover */
+}
+
+.tech-box h3, .tools-box h3 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #03dac5; /* Turquesa vibrante más moderno */
+    font-weight: 600;
+    letter-spacing: 1px; /* Espaciado entre letras para mayor claridad */
+}
+
+.tech-box ul, .tools-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-box li, .tools-box li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio más amplio entre los ítems */
+}
+
+.tech-logo {
+    width: 45px; /* Tamaño del logo ligeramente más grande */
+    height: auto;
+    margin-right: 15px;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.3)); /* Sombras ligeras alrededor del logo */
+    transition: transform 0.2s ease; /* Efecto de zoom al pasar el ratón */
+}
+
+.tech-logo:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.tools-box {
+    text-align: left;
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+}
+
+@media (max-width: 768px) {
+    .tech-box, .tools-box {
+        width: 100%;
+    }
+}
+
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribución responsiva */
+    gap: 40px; /* Espaciado más amplio entre las columnas */
+    color: #00bcd4; /* Color turquesa vibrante */
+    padding: 40px;
+    background-color: #2a2a3b; /* Fondo más claro para buen contraste con el color */
+    border-radius: 15px; /* Bordes redondeados para un estilo más moderno */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombras suaves para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+}
+
+.experience:hover {
+    transform: translateY(-10px); /* Levantamiento al pasar el ratón */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombras más profundas en hover */
+}
+
+.experience h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #03dac5; /* Turquesa vibrante */
+    font-weight: 600;
+    letter-spacing: 1px; /* Espaciado entre letras para un estilo moderno */
+}
+
+.experience p {
+    font-size: 1.2em;
+    line-height: 1.8; /* Mayor separación entre líneas para mejorar la legibilidad */
+    color: #b0bec5; /* Color gris claro para el texto */
+}
+
+@media (max-width: 768px) {
+    .experience {
+        grid-template-columns: 1fr; /* Ajuste a una columna en pantallas pequeñas */
+    }
+}
+
+
+
+
+/* Proyectos */
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1e1e2f; /* Fondo de la tarjeta */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #b0bec5;
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #0097a7; /* Color más oscuro al pasar el mouse */
+}
+
+/* Enlaces de redes sociales */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 2.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e2f;
+    border-top: 1px solid #444;
+    color: #b0bec5;
+    margin-top: 50px;
+}
+>>>>>>> cd727b0 (Commit Inicial)
